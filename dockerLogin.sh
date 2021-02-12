@@ -13,3 +13,5 @@ if [[ -z $shell ]]; then
     shell=/bin/bash
 fi
 docker exec -it $ContainerID $shell
+# for root access use this line instead
+# docker exec -it --workdir /root --user root $ContainerID $shell
